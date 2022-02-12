@@ -1,5 +1,6 @@
 package nivell1;
 
+
 /**
  * Crea una classe que repliqui el funcionament del comando 'Undo'. Aquesta
  * classe serà utilitzada per la classe Main, que permetrà introduir opcions per
@@ -34,8 +35,12 @@ public class Main {
 		undo.undo();
 		// historial de las llamadas a metodos
 		System.out.println("---");
+		//guarda historial en archivo de texto
+		undo.guardarHistorial();
+		//muestra historial de comandos introducidos
 		undo.history();
 
 	}
-
+	
+	
 }
